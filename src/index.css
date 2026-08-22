@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-light: var(--primary-light);
+
+  --spacing-safe-bottom: env(safe-area-inset-bottom);
+}
+
+:root {
+  --background: #ffffff;
+  --surface: #f8fafc;
+  --surface-hover: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --border: #f1f5f9;
+  --primary: #4f46e5; /* indigo-600 */
+  --primary-hover: #4338ca; /* indigo-700 */
+  --primary-light: #c7d2fe; /* indigo-200 */
+}
+
+html.dark {
+  --background: #020617; /* slate-950 */
+  --surface: #0f172a; /* slate-900 */
+  --surface-hover: #1e293b; /* slate-800 */
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #64748b;
+  --border: #1e293b;
+  --primary: #6366f1; /* indigo-500 */
+  --primary-hover: #818cf8; /* indigo-400 */
+  --primary-light: #3730a3; /* indigo-800 */
+}
+
+@utility pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+}
