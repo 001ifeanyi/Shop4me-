@@ -2,13 +2,13 @@
   "name": "Shop4Me",
   "short_name": "Shop4Me",
   "description": "Your Errand Boy. We'll do the shopping and errands for you.",
-  "start_url": "/",
+  "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#2563EB",
   "icons": [
     {
-      "src": "/icon.svg",
+      "src": "icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
